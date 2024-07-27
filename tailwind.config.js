@@ -10,18 +10,25 @@ export default {
         redHatText: ['Red Hat Text', 'sans-serif'],
       },
       colors: {
-        red: 'hsl(var(--Red))',
+        red: {
+          red: 'hsl(var(--Red))',
+          darker: 'hsl(var(--Red-darker))'
+        },
         green: 'hsl(var(--Green))',
         rose: {
-          50: 'hsl(var(--Rose-50))',
-          100: 'hsl(var(--Rose-100))',
-          300: 'hsl(var(--Rose-300))',
-          400: 'hsl(var(--Rose-400))',
-          500: 'hsl(var(--Rose-500))',
-          900: 'hsl(var(--Rose-900))',
+          50: 'hsl(var(--Rose-50) )',
+          100: 'hsl(var(--Rose-100) )',
+          300: 'hsl(var(--Rose-300) )',
+          400: 'hsl(var(--Rose-400) )',
+          500: 'hsl(var(--Rose-500) )',
+          900: 'hsl(var(--Rose-900) )',
         },
       },
+      screens: {
+        'mobile': '375px',
+      },
     },
-    plugins: [],
-  }
+  },
+  plugins: [],
 }
+
