@@ -21,7 +21,7 @@ function App() {
 	};
 
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 m-20 xl:gap-7 relative mobile:m-5">
+		<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 m-20 xl:gap-7 relative mobile:max-md:m-5">
 			<Item />
 			<Cart openModal={handleOpenModal}/>
 			<ConfirmedModal isOpen={isModalOpen} handleCloseModal={handleCloseModal}/>

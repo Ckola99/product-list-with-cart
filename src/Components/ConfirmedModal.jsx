@@ -10,24 +10,24 @@ const ConfirmedModal = ({ isOpen, handleCloseModal }) => {
 	);
 
 	return isOpen ? (
-		<div className="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50 transition-colors z-[10] mobile:items-end">
-			<div className="bg-white p-6 rounded-lg shadow-lg w-[20rem] mobile:w-full mobile:h-[90vh]">
+		<div className="fixed inset-0 flex md:justify-center md:items-center bg-gray-800 bg-opacity-50 transition-colors z-[10] mobile:items-end">
+			<div className="bg-white p-6 rounded-lg shadow-lg md:w-[22rem] mobile:w-full mobile:max-md:h-[90vh] mobile:max-md:rounded-b-none">
 				<img
 					src={checkImg}
-					className="w-6 h-6 mb-3 mobile:w-11 mobile:h-11"
+					className="lg:w-6 lg:h-6 mb-3 mobile:w-11 mobile:h-11"
 				/>
-				<h2 className="text-[1.35rem] font-bold mobile:text-[2.65rem] mobile:leading-tight">
+				<h2 className="lg:text-[1.35rem] font-bold mobile:max-md:text-[2.65rem] mobile:max-md:leading-tight">
 					Order{" "}
-					<span className="block">Confirmed</span>
+					<span className="mobile:max-md:block">Confirmed</span>
 				</h2>
-				<p className="text-[10.5px] text-rose-500 mb-4 mobile:text-xl mobile:mb-5">
+				<p className="lg:text-[10.5px] text-rose-500 lg:mb-4 mobile:max-md:text-xl mobile:max-md:mb-5">
 					We hope you enjoy food!
 				</p>
 				<div className="bg-rose-50 rounded px-3 py-2">
 					{itemsInCart.map((item) => (
 						<div
 							key={item.id}
-							className="flex justify-between py-2 border-b border-b-gray items-center mobile:p-3"
+							className="flex justify-between py-2 border-b border-b-gray items-center mobile:max-md:p-3"
 						>
 							<div className="flex items-center">
 								<img
@@ -39,9 +39,9 @@ const ConfirmedModal = ({ isOpen, handleCloseModal }) => {
 									alt={
 										item.name
 									}
-									className="h-8 w-8 rounded mr-2 mobile:h-12 mobile:w-12 mobile:mr-4 "
+									className="lg:h-8 lg:w-8 rounded lg:mr-2 mobile:max-md:h-12 mobile:max-md:w-12 mobile:max-md:mr-4 "
 								/>
-								<div className="text-[8px] mobile:text-[14px] truncate max-w-[150px]">
+								<div className="lg:text-[8px] mobile:max-md:text-[14px] mobile:max-md:truncate mobile:max-md:max-w-[150px]">
 									<p className="font-bold mb-1">
 										{
 											item.name
@@ -64,7 +64,7 @@ const ConfirmedModal = ({ isOpen, handleCloseModal }) => {
 									</p>
 								</div>
 							</div>
-							<p className="font-semibold text-[10px] mobile:text-[16px]">
+							<p className="font-semibold lg:text-[10px] mobile:max-md:text-[16px]">
 								$
 								{(
 									item.price *
@@ -73,11 +73,11 @@ const ConfirmedModal = ({ isOpen, handleCloseModal }) => {
 							</p>
 						</div>
 					))}
-					<div className="flex justify-between items-center my-2 mobile:my-4 px-3">
-						<p className="text-[9px] mobile:text-[14px]">
+					<div className="flex justify-between items-center my-2 mobile:max-md:my-4 mobile:max-md:px-3">
+						<p className="lg:text-[9px] mobile:max-md:text-[14px]">
 							Order Total
 						</p>
-						<p className="font-bold mobile:text-xl">
+						<p className="font-bold mobile:max-md:text-xl">
 							$
 							{totalAmount.toFixed(2)}
 						</p>

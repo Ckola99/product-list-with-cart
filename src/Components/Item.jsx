@@ -7,11 +7,11 @@ const Item = () => {
 	const itemsInCart = useSelector(selectItems);
 
 	return (
-		<div className=" lg:col-span-2 md:col-span-2 mobile:mb-6">
-			<h1 className="mb-6 text-[2.6rem] font-bold text-rose-900 mobile:-mt-5">
+		<div className=" lg:col-span-2 md:col-span-2 mobile:max-md:mb-6">
+			<h1 className="mb-6 text-[2.6rem] font-bold text-rose-900 mobile:max-md:-mt-5">
 				Desserts
 			</h1>
-			<div className="grid xl:grid-cols-3 xl:grid-rows-3 xl:gap-5 mobile:gap-6">
+			<div className="grid xl:grid-cols-3 xl:grid-rows-3 xl:gap-5 mobile:max-md:gap-6">
 				{data.map((item) => {
 					const inCart = itemsInCart.find(
 						(cartItem) =>
