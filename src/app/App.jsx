@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Item from "../components/Item";
-import Cart from "../components/Cart";
-import ConfirmedModal from "../components/ConfirmedModal";
+import Item from "../Components/Item";
+import Cart from "../Components/Cart";
+import ConfirmedModal from "../Components/ConfirmedModal";
 import { useDispatch, useSelector } from 'react-redux';
 import { openModal, closeModal } from '../features/ModalFeature/ModalSlice';
 import { selectState } from "../features/ModalFeature/ModalSlice";
